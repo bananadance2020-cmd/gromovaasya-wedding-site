@@ -1,0 +1,113 @@
+/* gromovaasya Wedding Invitations — Animations · Tiffany Edition */
+
+:root {
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---- Keyframes ---- */
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fabPulse {
+  0%, 100% { box-shadow: 0 4px 12px rgba(126,205,192,0.3); transform: scale(1); }
+  50%      { box-shadow: 0 4px 20px rgba(126,205,192,0.5); transform: scale(1.06); }
+}
+
+/* ---- Hero Staggered Entrance ---- */
+.hero__subtitle, .hero__title, .hero__description, .hero__actions {
+  opacity: 0; transform: translateY(20px);
+  animation: heroFadeIn 600ms var(--ease-out-expo) forwards;
+}
+.hero__subtitle    { animation-delay: 100ms; }
+.hero__title       { animation-delay: 180ms; }
+.hero__description { animation-delay: 260ms; }
+.hero__actions     { animation-delay: 340ms; }
+
+/* ---- Scroll Reveal ---- */
+.reveal {
+  opacity: 0; transform: translateY(16px);
+  transition: opacity 400ms var(--ease-out), transform 400ms var(--ease-out);
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+
+.reveal-children > * {
+  opacity: 0; transform: translateY(12px);
+  transition: opacity 400ms var(--ease-out), transform 400ms var(--ease-out);
+}
+.reveal-children.is-visible > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-children.is-visible > *:nth-child(2) { transition-delay: 60ms; }
+.reveal-children.is-visible > *:nth-child(3) { transition-delay: 120ms; }
+.reveal-children.is-visible > *:nth-child(4) { transition-delay: 180ms; }
+.reveal-children.is-visible > *:nth-child(5) { transition-delay: 240ms; }
+.reveal-children.is-visible > *:nth-child(6) { transition-delay: 300ms; }
+.reveal-children.is-visible > *:nth-child(n+7) { transition-delay: 360ms; }
+.reveal-children.is-visible > * { opacity: 1; transform: none; }
+
+/* ---- Card Hover ---- */
+.catalog-card {
+  transition: transform 250ms var(--ease-in-out), box-shadow 250ms var(--ease-in-out);
+}
+.catalog-card:hover { transform: scale(1.02); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.08); }
+.catalog-card__image { transition: transform 400ms var(--ease-in-out); }
+.catalog-card:hover .catalog-card__image { transform: scale(1.05); }
+.catalog-card__overlay { opacity: 0; transition: opacity 250ms var(--ease-in-out); }
+.catalog-card:hover .catalog-card__overlay { opacity: 1; }
+.catalog-card__btn {
+  transform: translateY(8px); opacity: 0;
+  transition: transform 250ms var(--ease-out), opacity 250ms var(--ease-out);
+}
+.catalog-card:hover .catalog-card__btn { transform: none; opacity: 1; }
+
+/* ---- Filter Pills ---- */
+.filter-btn {
+  transition: transform 150ms var(--ease-in-out), background-color 150ms var(--ease-in-out),
+              color 150ms var(--ease-in-out), box-shadow 150ms var(--ease-in-out);
+}
+.filter-btn:hover { transform: scale(1.04); background-color: #D4F0EC; }
+.filter-btn--active {
+  transform: scale(1.06); background-color: #7ECDC0; color: #fff;
+  box-shadow: 0 2px 8px rgba(126,205,192,0.35);
+}
+.filter-btn:active { transform: scale(0.97); }
+
+/* ---- FAQ Accordion ---- */
+.faq__question { transition: color 150ms var(--ease-in-out); }
+.faq__question::after {
+  content: ''; display: inline-block; width: 16px; height: 16px;
+  margin-left: auto; flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23636E72' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-size: contain; background-repeat: no-repeat;
+  transition: transform 250ms var(--ease-in-out);
+}
+.faq__item[open] .faq__question { color: #5BAFA3; }
+.faq__item[open] .faq__question::after { transform: rotate(180deg); }
+.faq__answer {
+  display: grid; grid-template-rows: 0fr;
+  transition: grid-template-rows 250ms var(--ease-in-out);
+}
+.faq__item[open] .faq__answer { grid-template-rows: 1fr; }
+.faq__answer > * { overflow: hidden; }
+
+/* ---- Carousel ---- */
+.reviews__track { transition: transform 400ms var(--ease-out); }
+.reviews__track.is-dragging { transition: none; }
+
+/* ---- FAB Pulse ---- */
+.fab--telegram { animation: fabPulse 3s var(--ease-in-out) 2s infinite; }
+
+/* ---- Accessibility ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal, .reveal-children > *,
+  .hero__subtitle, .hero__title, .hero__description, .hero__actions {
+    opacity: 1; transform: none;
+  }
+}
