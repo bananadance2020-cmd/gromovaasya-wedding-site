@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Tiffany gradient background -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A0E2D6"/>
+      <stop offset="40%" stop-color="#7ECDC0"/>
+      <stop offset="100%" stop-color="#4A9E91"/>
+    </linearGradient>
+
+    <!-- Soft overlay gradient -->
+    <linearGradient id="overlay-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF9" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#FDFBF9" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Gold accent gradient -->
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DCC59A"/>
+      <stop offset="50%" stop-color="#C9A96E"/>
+      <stop offset="100%" stop-color="#DCC59A"/>
+    </linearGradient>
+
+    <!-- Gold CTA gradient -->
+    <linearGradient id="cta-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DCC59A"/>
+      <stop offset="100%" stop-color="#C9A96E"/>
+    </linearGradient>
+
+    <!-- Corner flower pattern -->
+    <g id="flower-corner">
+      <!-- Main flower -->
+      <circle cx="0" cy="-28" r="10" fill="#F5EDE3" opacity="0.7"/>
+      <circle cx="-14" cy="-22" r="8" fill="#F5EDE3" opacity="0.5"/>
+      <circle cx="14" cy="-22" r="8" fill="#F5EDE3" opacity="0.5"/>
+      <circle cx="-22" cy="-8" r="7" fill="#F5EDE3" opacity="0.4"/>
+      <circle cx="22" cy="-8" r="7" fill="#F5EDE3" opacity="0.4"/>
+      <!-- Leaves -->
+      <ellipse cx="-28" cy="6" rx="14" ry="6" fill="#2D6B62" opacity="0.3" transform="rotate(-30 -28 6)"/>
+      <ellipse cx="28" cy="6" rx="14" ry="6" fill="#2D6B62" opacity="0.3" transform="rotate(30 28 6)"/>
+      <ellipse cx="-18" cy="16" rx="12" ry="5" fill="#2D6B62" opacity="0.25" transform="rotate(-50 -18 16)"/>
+      <ellipse cx="18" cy="16" rx="12" ry="5" fill="#2D6B62" opacity="0.25" transform="rotate(50 18 16)"/>
+      <!-- Stems -->
+      <path d="M0,0 Q-3,-12 0,-28" stroke="#2D6B62" stroke-width="1.5" fill="none" opacity="0.3"/>
+      <path d="M0,0 Q-12,-8 -28,6" stroke="#2D6B62" stroke-width="1" fill="none" opacity="0.25"/>
+      <path d="M0,0 Q12,-8 28,6" stroke="#2D6B62" stroke-width="1" fill="none" opacity="0.25"/>
+    </g>
+
+    <!-- Small decorative flower -->
+    <g id="small-flower">
+      <circle cx="0" cy="-12" r="5" fill="#F5EDE3" opacity="0.6"/>
+      <circle cx="-7" cy="-9" r="4" fill="#F5EDE3" opacity="0.4"/>
+      <circle cx="7" cy="-9" r="4" fill="#F5EDE3" opacity="0.4"/>
+      <path d="M0,0 Q-1,-5 0,-12" stroke="#2D6B62" stroke-width="1" fill="none" opacity="0.2"/>
+      <ellipse cx="-10" cy="2" rx="6" ry="3" fill="#2D6B62" opacity="0.2" transform="rotate(-35 -10 2)"/>
+      <ellipse cx="10" cy="2" rx="6" ry="3" fill="#2D6B62" opacity="0.2" transform="rotate(35 10 2)"/>
+    </g>
+
+    <!-- Heart decoration -->
+    <g id="heart-deco">
+      <path d="M0,-6 C0,-10 -6,-12 -8,-8 C-10,-3 -4,4 0,8 C4,4 10,-3 8,-8 C6,-12 0,-10 0,-6Z" fill="#F5EDE3" opacity="0.5"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-grad)"/>
+  <rect width="1200" height="630" fill="url(#overlay-grad)"/>
+
+  <!-- Subtle pattern overlay -->
+  <rect width="1200" height="630" fill="#FDFBF9" opacity="0.03"/>
+
+  <!-- Decorative frame -->
+  <rect x="40" y="40" width="1120" height="550" rx="8" ry="8" fill="none" stroke="#F5EDE3" stroke-width="1.5" opacity="0.35"/>
+  <rect x="52" y="52" width="1096" height="526" rx="4" ry="4" fill="none" stroke="#F5EDE3" stroke-width="0.75" opacity="0.2"/>
+
+  <!-- Corner flowers - top-left -->
+  <use href="#flower-corner" x="80" y="75" transform="rotate(0 80 75) scale(1.3)"/>
+
+  <!-- Corner flowers - top-right -->
+  <use href="#flower-corner" x="1120" y="75" transform="rotate(90 1120 75) scale(1.3)"/>
+
+  <!-- Corner flowers - bottom-right -->
+  <use href="#flower-corner" x="1120" y="555" transform="rotate(180 1120 555) scale(1.3)"/>
+
+  <!-- Corner flowers - bottom-left -->
+  <use href="#flower-corner" x="80" y="555" transform="rotate(270 80 555) scale(1.3)"/>
+
+  <!-- Small scattered flowers -->
+  <use href="#small-flower" x="200" y="90" transform="rotate(15 200 90)"/>
+  <use href="#small-flower" x="340" y="75" transform="rotate(-20 340 75)"/>
+  <use href="#small-flower" x="860" y="85" transform="rotate(10 860 85)"/>
+  <use href="#small-flower" x="1000" y="95" transform="rotate(-15 1000 95)"/>
+  <use href="#small-flower" x="180" y="540" transform="rotate(-10 180 540)"/>
+  <use href="#small-flower" x="950" y="545" transform="rotate(20 950 545)"/>
+
+  <!-- Hearts scattered -->
+  <use href="#heart-deco" x="430" y="100" transform="rotate(-15 430 100) scale(1.2)"/>
+  <use href="#heart-deco" x="780" y="95" transform="rotate(25 780 95) scale(0.9)"/>
+  <use href="#heart-deco" x="160" y="490" transform="rotate(30 160 490) scale(0.8)"/>
+  <use href="#heart-deco" x="1040" y="500" transform="rotate(-20 1040 500) scale(1)"/>
+
+  <!-- Gold decorative lines above title -->
+  <line x1="420" y1="170" x2="540" y2="170" stroke="url(#gold-grad)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="660" y1="170" x2="780" y2="170" stroke="url(#gold-grad)" stroke-width="1.5" opacity="0.6"/>
+  <!-- Center diamond -->
+  <polygon points="600,166 604,170 600,174 596,170" fill="#C9A96E" opacity="0.6"/>
+
+  <!-- Script decorative word "Wedding" (Great Vibes style, Latin only) -->
+  <text x="600" y="220" font-family="'Great Vibes', 'Brush Script MT', cursive" font-size="42" fill="#F5EDE3" text-anchor="middle" opacity="0.5" letter-spacing="0.05em">Wedding</text>
+
+  <!-- Main title: Свадебные приглашения -->
+  <text x="600" y="310" font-family="'Cormorant Garamond', Georgia, serif" font-size="68" font-weight="600" fill="#FDFBF9" text-anchor="middle" letter-spacing="-0.02em">Свадебные приглашения</text>
+
+  <!-- Subtitle: от Анастасии Громовой -->
+  <text x="600" y="370" font-family="'Cormorant Garamond', Georgia, serif" font-size="30" font-weight="400" fill="#F5EDE3" text-anchor="middle" opacity="0.9" letter-spacing="0.02em">от Анастасии Громовой</text>
+
+  <!-- Gold decorative lines below subtitle -->
+  <line x1="460" y1="400" x2="540" y2="400" stroke="url(#gold-grad)" stroke-width="1" opacity="0.5"/>
+  <line x1="660" y1="400" x2="740" y2="400" stroke="url(#gold-grad)" stroke-width="1" opacity="0.5"/>
+  <circle cx="600" cy="400" r="3" fill="#C9A96E" opacity="0.5"/>
+
+  <!-- CTA Badge -->
+  <rect x="485" y="435" width="230" height="56" rx="28" ry="28" fill="#FDFBF9" opacity="0.95"/>
+  <rect x="485" y="435" width="230" height="56" rx="28" ry="28" fill="none" stroke="url(#gold-grad)" stroke-width="1.5" opacity="0.6"/>
+  <text x="600" y="470" font-family="'Inter', sans-serif" font-size="22" font-weight="500" fill="#2D6B62" text-anchor="middle" letter-spacing="0.04em">от 2 000 ₽</text>
+
+  <!-- Bottom tagline -->
+  <text x="600" y="530" font-family="'Inter', sans-serif" font-size="14" font-weight="400" fill="#F5EDE3" text-anchor="middle" opacity="0.6" letter-spacing="0.12em">ШАБЛОНЫ ПРИГЛАШЕНИЙ · КРАСИВО И ДОСТУПНО</text>
+</svg>

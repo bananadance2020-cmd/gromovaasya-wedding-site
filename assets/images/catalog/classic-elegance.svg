@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <!-- Shadow filter for invitation card -->
+    <filter id="card-shadow" x="-10%" y="-5%" width="130%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="6" flood-color="#1A1816" flood-opacity="0.15"/>
+    </filter>
+    <filter id="phone-shadow" x="-10%" y="-5%" width="130%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1A1816" flood-opacity="0.2"/>
+    </filter>
+    <!-- Gold gradient -->
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DCC59A"/>
+      <stop offset="50%" stop-color="#C9A96E"/>
+      <stop offset="100%" stop-color="#B59255"/>
+    </linearGradient>
+    <!-- Ornamental corner pattern -->
+    <g id="ornament-corner">
+      <path d="M0,0 Q15,2 25,8 Q30,12 35,20 Q38,25 40,35" fill="none" stroke="url(#gold-grad)" stroke-width="1.2"/>
+      <path d="M0,0 Q2,15 8,25 Q12,30 20,35 Q25,38 35,40" fill="none" stroke="url(#gold-grad)" stroke-width="1.2"/>
+      <circle cx="5" cy="5" r="1.5" fill="#C9A96E"/>
+      <path d="M10,2 Q15,0 18,4" fill="none" stroke="#C9A96E" stroke-width="0.8"/>
+      <path d="M2,10 Q0,15 4,18" fill="none" stroke="#C9A96E" stroke-width="0.8"/>
+    </g>
+    <!-- Decorative flourish -->
+    <g id="flourish">
+      <path d="M0,8 Q15,0 30,8 Q45,16 60,8 Q75,0 90,8" fill="none" stroke="url(#gold-grad)" stroke-width="1"/>
+      <path d="M0,8 Q15,16 30,8 Q45,0 60,8 Q75,16 90,8" fill="none" stroke="url(#gold-grad)" stroke-width="0.7"/>
+      <circle cx="45" cy="8" r="2" fill="#C9A96E"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="600" fill="#EDE0D2"/>
+
+  <!-- Phone mockup silhouette -->
+  <g filter="url(#phone-shadow)">
+    <rect x="55" y="30" width="290" height="540" rx="35" ry="35" fill="#1A1816"/>
+    <rect x="60" y="38" width="280" height="524" rx="30" ry="30" fill="#FAFAF8"/>
+    <!-- Phone notch -->
+    <rect x="165" y="38" width="70" height="14" rx="7" ry="7" fill="#1A1816"/>
+    <!-- Phone screen area -->
+    <rect x="62" y="54" width="276" height="506" rx="0" ry="0" fill="#FDFBF9"/>
+  </g>
+
+  <!-- Invitation card inside phone (with perspective transform) -->
+  <g transform="translate(82, 75) rotate(-1.5) scale(0.96)" filter="url(#card-shadow)">
+    <!-- Card background - warm beige -->
+    <rect x="0" y="0" width="240" height="460" rx="4" ry="4" fill="#F5EDE3"/>
+
+    <!-- Ornamental border -->
+    <rect x="10" y="10" width="220" height="440" rx="2" ry="2" fill="none" stroke="url(#gold-grad)" stroke-width="1.2"/>
+    <rect x="14" y="14" width="212" height="432" rx="1" ry="1" fill="none" stroke="#DCC59A" stroke-width="0.5"/>
+
+    <!-- Corner ornaments -->
+    <use href="#ornament-corner" x="18" y="18"/>
+    <use href="#ornament-corner" x="182" y="18" transform="scale(-1,1) translate(-200,0)"/>
+    <use href="#ornament-corner" x="18" y="382" transform="scale(1,-1) translate(0,-400)"/>
+    <use href="#ornament-corner" x="182" y="382" transform="scale(-1,-1) translate(-200,-400)"/>
+
+    <!-- Top decorative flourish -->
+    <use href="#flourish" x="75" y="55"/>
+
+    <!-- "Приглашение" header -->
+    <text x="120" y="100" text-anchor="middle" font-family="'Great Vibes', 'Brush Script MT', cursive" font-size="18" fill="#B59255" letter-spacing="0.04em">Приглашение</text>
+
+    <!-- Decorative line -->
+    <line x1="60" y1="112" x2="180" y2="112" stroke="url(#gold-grad)" stroke-width="0.8"/>
+
+    <!-- Pre-names text -->
+    <text x="120" y="145" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="10" fill="#6B665C" letter-spacing="0.15em">ВАС ПРИГЛАШАЮТ</text>
+
+    <!-- Names - main focus -->
+    <text x="120" y="190" text-anchor="middle" font-family="'Great Vibes', 'Brush Script MT', cursive" font-size="30" fill="#1A1816">Анна</text>
+    <text x="120" y="210" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="14" fill="#C9A96E" letter-spacing="0.2em">&amp;</text>
+    <text x="120" y="245" text-anchor="middle" font-family="'Great Vibes', 'Brush Script MT', cursive" font-size="30" fill="#1A1816">Дмитрий</text>
+
+    <!-- Decorative line -->
+    <line x1="50" y1="265" x2="190" y2="265" stroke="url(#gold-grad)" stroke-width="0.8"/>
+
+    <!-- Date -->
+    <text x="120" y="295" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="11" fill="#6B665C" letter-spacing="0.1em">15 августа 2026</text>
+
+    <!-- Time -->
+    <text x="120" y="315" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="9" fill="#8A8578">в 16:00</text>
+
+    <!-- Venue hint -->
+    <text x="120" y="345" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="8.5" fill="#8A8578" letter-spacing="0.05em">Усадьба «Лесная поляна»</text>
+    <text x="120" y="358" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="8" fill="#A8A296">Московская область</text>
+
+    <!-- Bottom flourish -->
+    <use href="#flourish" x="75" y="380"/>
+
+    <!-- Small decorative dots -->
+    <circle cx="120" cy="420" r="1" fill="#C9A96E"/>
+    <circle cx="110" cy="420" r="0.7" fill="#DCC59A"/>
+    <circle cx="130" cy="420" r="0.7" fill="#DCC59A"/>
+  </g>
+
+  <!-- Phone home indicator -->
+  <rect x="170" y="550" width="60" height="4" rx="2" fill="#1A1816" opacity="0.3"/>
+</svg>

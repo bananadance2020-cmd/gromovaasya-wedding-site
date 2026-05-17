@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#7ECDC0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Palette body -->
+  <path d="M12 3C7 3 3 7 3 12c0 3 2 5 4 5.5c.5.1 1-.2 1-.7c0-.8.5-1.5 1.5-1.5H11c2.5 0 4.5-2 4.5-4.5V10c0-1-.5-1.5-1-1.5"/>
+  <!-- Thumb hole -->
+  <circle cx="6.5" cy="14" r="1.2"/>
+  <!-- Paint dots -->
+  <circle cx="9" cy="6" r="1"/>
+  <circle cx="12" cy="5" r="1"/>
+  <circle cx="15" cy="6.5" r="1"/>
+  <circle cx="16.5" cy="9" r="1"/>
+  <!-- Brush handle -->
+  <line x1="14" y1="14" x2="21" y2="21"/>
+  <!-- Brush ferrule -->
+  <line x1="12.5" y1="12.5" x2="14" y2="14"/>
+  <!-- Brush bristles -->
+  <path d="M10 10l2.5 2.5l-1 1.5l-2-2z"/>
+  <path d="M10 10l1-1.5"/>
+</svg>

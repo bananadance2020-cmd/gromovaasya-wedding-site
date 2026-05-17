@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#7ECDC0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Price tag shape -->
+  <path d="M3 11l8.5-8.5a1 1 0 01.7-.3h7.3a1 1 0 011 1v7.3a1 1 0 01-.3.7L11.7 20a1 1 0 01-1.4 0L3 12.7a1 1 0 010-1.4z"/>
+  <!-- Tag hole -->
+  <circle cx="7.5" cy="7.5" r="1.2"/>
+  <!-- Ruble sign -->
+  <path d="M9 13h4.5a1.5 1.5 0 000-3H9v6"/>
+  <line x1="7.5" y1="13" x2="14" y2="13"/>
+</svg>

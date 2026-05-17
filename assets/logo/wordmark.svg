@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" width="200" height="40">
+  <defs>
+    <linearGradient id="wordmark-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DCC59A"/>
+      <stop offset="50%" stop-color="#C9A96E"/>
+      <stop offset="100%" stop-color="#DCC59A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main text: Анастасия Громова -->
+  <text x="100" y="28" font-family="'Cormorant Garamond', Georgia, serif" font-size="20" font-weight="600" fill="#1A1816" text-anchor="middle" letter-spacing="-0.01em">Анастасия Громова</text>
+
+  <!-- Subtle underline accent -->
+  <line x1="40" y1="33" x2="80" y2="33" stroke="url(#wordmark-gold)" stroke-width="0.75" opacity="0.6"/>
+  <line x1="120" y1="33" x2="160" y2="33" stroke="url(#wordmark-gold)" stroke-width="0.75" opacity="0.6"/>
+  <circle cx="100" cy="33" r="1.2" fill="#C9A96E" opacity="0.6"/>
+</svg>

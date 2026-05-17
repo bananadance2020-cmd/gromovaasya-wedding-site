@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF9"/>
+      <stop offset="100%" stop-color="#F0FAF8"/>
+    </linearGradient>
+    <linearGradient id="avatar-3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A9E91"/>
+      <stop offset="100%" stop-color="#2D6B62"/>
+    </linearGradient>
+    <linearGradient id="gold-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DCC59A"/>
+      <stop offset="100%" stop-color="#C9A96E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="200" height="200" rx="16" ry="16" fill="url(#bg-3)"/>
+
+  <!-- Decorative outer frame -->
+  <rect x="8" y="8" width="184" height="184" rx="12" ry="12" fill="none" stroke="#DCC59A" stroke-width="1" opacity="0.4"/>
+
+  <!-- Decorative inner frame -->
+  <rect x="16" y="16" width="168" height="168" rx="8" ry="8" fill="none" stroke="#4A9E91" stroke-width="0.75" opacity="0.2"/>
+
+  <!-- Corner decorations -->
+  <path d="M24,32 Q24,24 32,24" fill="none" stroke="#DCC59A" stroke-width="1.5" opacity="0.5"/>
+  <path d="M176,32 Q176,24 168,24" fill="none" stroke="#DCC59A" stroke-width="1.5" opacity="0.5"/>
+  <path d="M24,168 Q24,176 32,176" fill="none" stroke="#DCC59A" stroke-width="1.5" opacity="0.5"/>
+  <path d="M176,168 Q176,176 168,176" fill="none" stroke="#DCC59A" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Avatar circle (dark tiffany) -->
+  <circle cx="100" cy="68" r="32" fill="url(#avatar-3)"/>
+  <circle cx="100" cy="68" r="31" fill="none" stroke="#F5EDE3" stroke-width="1" opacity="0.4"/>
+
+  <!-- Initials -->
+  <text x="100" y="76" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" fill="#FDFBF9" text-anchor="middle">АП</text>
+
+  <!-- Stars (5 stars) -->
+  <g fill="#C9A96E" opacity="0.7">
+    <polygon points="62,112 64,107 66,112 71,112 67,115 68.5,120 64,117 59.5,120 61,115 57,112" transform="scale(0.9) translate(7,12)"/>
+    <polygon points="78,112 80,107 82,112 87,112 83,115 84.5,120 80,117 75.5,120 77,115 73,112" transform="scale(0.9) translate(9,12)"/>
+    <polygon points="94,112 96,107 98,112 103,112 99,115 100.5,120 96,117 91.5,120 93,115 89,112" transform="scale(0.9) translate(11,12)"/>
+    <polygon points="110,112 112,107 114,112 119,112 115,115 116.5,120 112,117 107.5,120 109,115 105,112" transform="scale(0.9) translate(13,12)"/>
+    <polygon points="126,112 128,107 130,112 135,112 131,115 132.5,120 128,117 123.5,120 125,115 121,112" transform="scale(0.9) translate(15,12)"/>
+  </g>
+
+  <!-- Placeholder text lines -->
+  <rect x="38" y="135" width="124" height="4" rx="2" fill="#C5C0B6" opacity="0.3"/>
+  <rect x="44" y="145" width="112" height="4" rx="2" fill="#C5C0B6" opacity="0.25"/>
+  <rect x="52" y="155" width="96" height="4" rx="2" fill="#C5C0B6" opacity="0.2"/>
+  <rect x="65" y="165" width="70" height="4" rx="2" fill="#C5C0B6" opacity="0.15"/>
+
+  <!-- Small decorative leaf -->
+  <ellipse cx="100" cy="184" rx="6" ry="2.5" fill="#4A9E91" opacity="0.25" transform="rotate(-15 100 184)"/>
+  <ellipse cx="90" cy="183" rx="5" ry="2" fill="#4A9E91" opacity="0.2" transform="rotate(-30 90 183)"/>
+</svg>

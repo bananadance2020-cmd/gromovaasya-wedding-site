@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <filter id="shadow" x="-10%" y="-5%" width="130%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#1A1816" flood-opacity="0.15"/>
+    </filter>
+    <filter id="soft-shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#1A1816" flood-opacity="0.12"/>
+    </filter>
+    <filter id="gold-glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="gold-foil" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5EDDF"/>
+      <stop offset="25%" stop-color="#DCC59A"/>
+      <stop offset="50%" stop-color="#C9A96E"/>
+      <stop offset="75%" stop-color="#DCC59A"/>
+      <stop offset="100%" stop-color="#9E7D3E"/>
+    </linearGradient>
+    <linearGradient id="gold-foil-h" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9E7D3E"/>
+      <stop offset="30%" stop-color="#C9A96E"/>
+      <stop offset="50%" stop-color="#F5EDDF"/>
+      <stop offset="70%" stop-color="#C9A96E"/>
+      <stop offset="100%" stop-color="#9E7D3E"/>
+    </linearGradient>
+    <linearGradient id="dark-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A1816"/>
+      <stop offset="50%" stop-color="#2A2622"/>
+      <stop offset="100%" stop-color="#1A1816"/>
+    </linearGradient>
+    <linearGradient id="dark-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A2622"/>
+      <stop offset="100%" stop-color="#1F1C19"/>
+    </linearGradient>
+    <clipPath id="phone-clip">
+      <rect x="40" y="20" width="320" height="560" rx="36" ry="36"/>
+    </clipPath>
+    <pattern id="emboss" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none"/>
+      <circle cx="4" cy="4" r="0.5" fill="#C9A96E" opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <!-- Phone body -->
+  <rect x="36" y="16" width="328" height="568" rx="40" ry="40" fill="#0D0C0B" filter="url(#shadow)"/>
+  <rect x="40" y="20" width="320" height="560" rx="36" ry="36" fill="url(#dark-bg)"/>
+  
+  <!-- Notch -->
+  <rect x="150" y="20" width="100" height="24" rx="12" ry="12" fill="#0D0C0B"/>
+  <circle cx="185" cy="32" r="4" fill="#1A1816" opacity="0.8"/>
+  <circle cx="200" cy="32" r="3" fill="#1A1816" opacity="0.5"/>
+
+  <!-- Screen content -->
+  <g clip-path="url(#phone-clip)">
+    <!-- Embossed pattern overlay -->
+    <rect x="40" y="44" width="320" height="536" fill="url(#emboss)"/>
+
+    <!-- Ornate corner flourishes -->
+    <g transform="translate(70, 75)" filter="url(#gold-glow)" opacity="0.5">
+      <path d="M0,30 Q0,0 30,0" fill="none" stroke="url(#gold-foil)" stroke-width="1.5"/>
+      <path d="M0,20 Q0,5 20,0" fill="none" stroke="url(#gold-foil)" stroke-width="0.8"/>
+      <circle cx="0" cy="30" r="2" fill="#C9A96E" opacity="0.5"/>
+      <circle cx="30" cy="0" r="2" fill="#C9A96E" opacity="0.5"/>
+    </g>
+    <g transform="translate(330, 75)" filter="url(#gold-glow)" opacity="0.5">
+      <path d="M0,30 Q0,0 -30,0" fill="none" stroke="url(#gold-foil)" stroke-width="1.5"/>
+      <path d="M0,20 Q0,5 -20,0" fill="none" stroke="url(#gold-foil)" stroke-width="0.8"/>
+      <circle cx="0" cy="30" r="2" fill="#C9A96E" opacity="0.5"/>
+      <circle cx="-30" cy="0" r="2" fill="#C9A96E" opacity="0.5"/>
+    </g>
+    <g transform="translate(70, 500)" filter="url(#gold-glow)" opacity="0.5">
+      <path d="M0,-30 Q0,0 30,0" fill="none" stroke="url(#gold-foil)" stroke-width="1.5"/>
+      <path d="M0,-20 Q0,-5 20,0" fill="none" stroke="url(#gold-foil)" stroke-width="0.8"/>
+    </g>
+    <g transform="translate(330, 500)" filter="url(#gold-glow)" opacity="0.5">
+      <path d="M0,-30 Q0,0 -30,0" fill="none" stroke="url(#gold-foil)" stroke-width="1.5"/>
+      <path d="M0,-20 Q0,-5 -20,0" fill="none" stroke="url(#gold-foil)" stroke-width="0.8"/>
+    </g>
+
+    <!-- Crown/royal ornament -->
+    <g transform="translate(200, 100)" filter="url(#gold-glow)">
+      <path d="M-30,15 L-25,-5 L-15,5 L0,-10 L15,5 L25,-5 L30,15" fill="none" stroke="url(#gold-foil)" stroke-width="1.2"/>
+      <circle cx="-25" cy="-5" r="2.5" fill="#C9A96E" opacity="0.7"/>
+      <circle cx="0" cy="-10" r="3" fill="#DCC59A" opacity="0.8"/>
+      <circle cx="25" cy="-5" r="2.5" fill="#C9A96E" opacity="0.7"/>
+      <line x1="-30" y1="15" x2="30" y2="15" stroke="url(#gold-foil)" stroke-width="1"/>
+    </g>
+
+    <!-- Invitation card - dark luxury -->
+    <rect x="60" y="160" width="280" height="330" rx="6" ry="6" fill="url(#dark-card)" filter="url(#soft-shadow)"/>
+    <rect x="60" y="160" width="280" height="330" rx="6" ry="6" fill="none" stroke="url(#gold-foil-h)" stroke-width="1.5"/>
+    <!-- Inner gold border -->
+    <rect x="66" y="166" width="268" height="318" rx="4" ry="4" fill="none" stroke="url(#gold-foil)" stroke-width="0.5" opacity="0.3"/>
+    <!-- Embossed pattern on card -->
+    <rect x="66" y="166" width="268" height="318" rx="4" ry="4" fill="url(#emboss)" opacity="0.5"/>
+
+    <!-- Gold foil top accent -->
+    <rect x="100" y="180" width="200" height="1" fill="url(#gold-foil-h)" opacity="0.6"/>
+
+    <!-- Decorative monogram area -->
+    <g transform="translate(200, 220)">
+      <circle cx="0" cy="0" r="28" fill="none" stroke="url(#gold-foil)" stroke-width="0.8" opacity="0.4"/>
+      <circle cx="0" cy="0" r="24" fill="none" stroke="url(#gold-foil)" stroke-width="0.5" opacity="0.3"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="url(#gold-foil)" font-weight="600" opacity="0.8">A&amp;D</text>
+    </g>
+
+    <!-- Names -->
+    <text x="200" y="290" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="600" fill="url(#gold-foil)" filter="url(#gold-glow)">Анна</text>
+    <text x="200" y="315" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#DCC59A" letter-spacing="4" opacity="0.7">&amp;</text>
+    <text x="200" y="345" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="600" fill="url(#gold-foil)" filter="url(#gold-glow)">Дмитрий</text>
+
+    <!-- Ornate divider -->
+    <g transform="translate(200, 365)">
+      <path d="M-50,0 Q-25,-6 0,0 Q25,6 50,0" fill="none" stroke="url(#gold-foil)" stroke-width="0.8" opacity="0.5"/>
+      <path d="M-30,0 Q-15,-3 0,0 Q15,3 30,0" fill="none" stroke="url(#gold-foil)" stroke-width="0.5" opacity="0.3"/>
+      <circle cx="0" cy="0" r="2.5" fill="#C9A96E" opacity="0.6"/>
+    </g>
+
+    <!-- Date -->
+    <text x="200" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#DCC59A" letter-spacing="3" opacity="0.8">15 АВГУСТА 2026</text>
+
+    <!-- Gold foil bottom accent -->
+    <rect x="100" y="415" width="200" height="1" fill="url(#gold-foil-h)" opacity="0.6"/>
+
+    <!-- Small diamond ornaments -->
+    <g transform="translate(200, 440)" opacity="0.4">
+      <rect x="-4" y="-4" width="8" height="8" fill="none" stroke="#C9A96E" stroke-width="0.5" transform="rotate(45)"/>
+      <rect x="-20" y="-2" width="4" height="4" fill="none" stroke="#C9A96E" stroke-width="0.3" transform="rotate(45)"/>
+      <rect x="16" y="-2" width="4" height="4" fill="none" stroke="#C9A96E" stroke-width="0.3" transform="rotate(45)"/>
+    </g>
+  </g>
+
+  <!-- Phone side button -->
+  <rect x="364" y="160" width="4" height="40" rx="2" fill="#1A1816"/>
+  <rect x="364" y="210" width="4" height="40" rx="2" fill="#1A1816"/>
+
+  <!-- Bottom home indicator -->
+  <rect x="140" y="565" width="120" height="4" rx="2" fill="#C9A96E" opacity="0.3"/>
+
+  <!-- Template label -->
+  <rect x="110" y="588" width="180" height="12" rx="6" fill="#C9A96E" opacity="0.15"/>
+  <text x="200" y="597" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#C9A96E" letter-spacing="1.5">ROYAL GOLD</text>
+</svg>

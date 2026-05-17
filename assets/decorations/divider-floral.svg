@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20" fill="none" stroke="#7ECDC0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Main wavy vine line -->
+  <path d="M0 10 Q25 2 50 10 Q75 18 100 10 Q125 2 150 10 Q175 18 200 10"/>
+  <!-- Leaves on top of vine (left side) -->
+  <path d="M25 7c-3-5 0-9 5-8c-1 3-3 6-5 8z"/>
+  <path d="M75 13c3 5 0 9-5 8c1-3 3-6 5-8z"/>
+  <path d="M125 7c-3-5 0-9 5-8c-1 3-3 6-5 8z"/>
+  <path d="M175 13c3 5 0 9-5 8c1-3 3-6 5-8z"/>
+  <!-- Leaves on bottom of vine (right side) -->
+  <path d="M25 13c3 5 0 9-5 8c1-3 3-6 5-8z"/>
+  <path d="M75 7c-3-5 0-9 5-8c-1 3-3 6-5 8z"/>
+  <path d="M125 13c3 5 0 9-5 8c1-3 3-6 5-8z"/>
+  <path d="M175 7c-3-5 0-9 5-8c-1 3-3 6-5 8z"/>
+  <!-- Small decorative dots at vine peaks -->
+  <circle cx="50" cy="10" r="1"/>
+  <circle cx="100" cy="10" r="1"/>
+  <circle cx="150" cy="10" r="1"/>
+  <!-- Small flower buds -->
+  <path d="M48 9c0-2 2-3 2-3s2 1 2 3c0 1-2 2-2 2s-2-1-2-2z"/>
+  <path d="M98 9c0-2 2-3 2-3s2 1 2 3c0 1-2 2-2 2s-2-1-2-2z"/>
+  <path d="M148 9c0-2 2-3 2-3s2 1 2 3c0 1-2 2-2 2s-2-1-2-2z"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="#7ECDC0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Central flower -->
+  <circle cx="50" cy="50" r="5"/>
+  <path d="M50 45c-3-5-8-7-8-7s2 6 8 12c6-6 8-12 8-12s-5 2-8 7z"/>
+  <path d="M55 50c5-3 7-8 7-8s-6 2-12 8c6 6 12 8 12 8s-2-5-7-8z"/>
+  <path d="M50 55c3 5 8 7 8 7s-2-6-8-12c-6 6-8 12-8 12s5-2 8-7z"/>
+  <path d="M45 50c-5 3-7 8-7 8s6-2 12-8c-6-6-12-8-12-8s2 5 7 8z"/>
+  <!-- Corner leaves top-left -->
+  <path d="M10 10c5 0 15 5 20 15c-5-10-10-12-15-12"/>
+  <path d="M15 12c3 2 10 6 15 12"/>
+  <path d="M10 20c8 0 12 5 15 12c-3-7-8-10-12-10"/>
+  <!-- Corner leaves top-right -->
+  <path d="M90 10c-5 0-15 5-20 15c5-10 10-12 15-12"/>
+  <path d="M85 12c-3 2-10 6-15 12"/>
+  <path d="M90 20c-8 0-12 5-15 12c3-7 8-10 12-10"/>
+  <!-- Corner leaves bottom-left -->
+  <path d="M10 90c5 0 15-5 20-15c-5 10-10 12-15 12"/>
+  <path d="M15 88c3-2 10-6 15-12"/>
+  <path d="M10 80c8 0 12-5 15-12c-3 7-8 10-12 10"/>
+  <!-- Corner leaves bottom-right -->
+  <path d="M90 90c-5 0-15-5-20-15c5 10 10 12 15 12"/>
+  <path d="M85 88c-3-2-10-6-15-12"/>
+  <path d="M90 80c-8 0-12-5-15-12c3 7 8 10 12 10"/>
+  <!-- Stem connectors -->
+  <path d="M30 30c5 5 10 10 15 15"/>
+  <path d="M70 30c-5 5-10 10-15 15"/>
+  <path d="M30 70c5-5 10-10 15-15"/>
+  <path d="M70 70c-5-5-10-10-15-15"/>
+  <!-- Small accent flowers -->
+  <circle cx="25" cy="25" r="2.5"/>
+  <circle cx="75" cy="25" r="2.5"/>
+  <circle cx="25" cy="75" r="2.5"/>
+  <circle cx="75" cy="75" r="2.5"/>
+  <!-- Tiny decorative dots -->
+  <circle cx="50" cy="25" r="1"/>
+  <circle cx="50" cy="75" r="1"/>
+  <circle cx="25" cy="50" r="1"/>
+  <circle cx="75" cy="50" r="1"/>
+</svg>
