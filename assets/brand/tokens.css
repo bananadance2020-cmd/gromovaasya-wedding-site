@@ -1,0 +1,496 @@
+/**
+ * Design Tokens — Gromova Asya Wedding Invites
+ * Project: gromovaasya-wedding-site
+ * Version: 1.0.0
+ * Generated: 2026-05-17
+ *
+ * Mobile-first, max-width 960px
+ * Reference: maryinvite.ru
+ *
+ * Usage: import once in root stylesheet
+ * All tokens prefixed with --wed- to avoid collisions
+ */
+
+:root {
+  /* ========================================
+   * 1. COLOR TOKENS
+   * ======================================== */
+
+  /* --- Tiffany (Primary) --- */
+  --wed-tiffany-50:  #F0FAF8;
+  --wed-tiffany-100: #D4F2EC;
+  --wed-tiffany-200: #B2E8DD;
+  --wed-tiffany-300: #A0E2D6;
+  --wed-tiffany-400: #8FD8CA;
+  --wed-tiffany-500: #7ECDC0;
+  --wed-tiffany-600: #63B5A8;
+  --wed-tiffany-700: #4A9E91;
+  --wed-tiffany-800: #388076;
+  --wed-tiffany-900: #2D6B62;
+
+  /* --- Ivory (Secondary / Warm Background) --- */
+  --wed-ivory-50:  #FDFBF9;
+  --wed-ivory-100: #F5EDE3;
+  --wed-ivory-200: #EDE0D2;
+  --wed-ivory-300: #DCCBB7;
+  --wed-ivory-400: #CDB89E;
+
+  /* --- Gold (Accent) --- */
+  --wed-gold-50:   #FBF8F2;
+  --wed-gold-100:  #F5EDDF;
+  --wed-gold-200:  #E8D8BE;
+  --wed-gold-300:  #DCC59A;
+  --wed-gold-400:  #D2B580;
+  --wed-gold-500:  #C9A96E;
+  --wed-gold-600:  #B59255;
+  --wed-gold-700:  #9E7D3E;
+  --wed-gold-800:  #7A6030;
+  --wed-gold-900:  #5A4623;
+
+  /* --- Neutrals (Warm Charcoal) --- */
+  --wed-neutral-50:  #FAFAF8;
+  --wed-neutral-100: #F0EEE9;
+  --wed-neutral-200: #E0DDD6;
+  --wed-neutral-300: #C5C0B6;
+  --wed-neutral-400: #A8A296;
+  --wed-neutral-500: #8A8578;
+  --wed-neutral-600: #6B665C;
+  --wed-neutral-700: #4A4640;
+  --wed-neutral-800: #2D2A26;
+  --wed-neutral-900: #1A1816;
+
+  /* --- Semantic Colors --- */
+  --wed-success:       #6B9E78;
+  --wed-success-light: #E8F2EB;
+  --wed-error:         #C25B5B;
+  --wed-error-light:   #F8E8E8;
+  --wed-info:          #5B8FC2;
+  --wed-info-light:    #E8EEF6;
+  --wed-warning:       #C9A96E;
+  --wed-warning-light: #F5EDDF;
+
+  /* --- Semantic Aliases (usage-based) --- */
+  --wed-color-primary:          var(--wed-tiffany-500);
+  --wed-color-primary-hover:    var(--wed-tiffany-700);
+  --wed-color-primary-light:    var(--wed-tiffany-50);
+  --wed-color-secondary:        var(--wed-ivory-100);
+  --wed-color-accent:           var(--wed-gold-500);
+  --wed-color-accent-hover:     var(--wed-gold-700);
+  --wed-color-accent-light:     var(--wed-gold-100);
+
+  --wed-color-bg-page:          var(--wed-ivory-50);
+  --wed-color-bg-section:       var(--wed-neutral-50);
+  --wed-color-bg-card:          var(--wed-ivory-100);
+  --wed-color-bg-elevated:      #FFFFFF;
+  --wed-color-bg-overlay:       rgba(26, 24, 22, 0.6);
+
+  --wed-color-text-primary:     var(--wed-neutral-900);
+  --wed-color-text-secondary:   var(--wed-neutral-700);
+  --wed-color-text-tertiary:    var(--wed-neutral-500);
+  --wed-color-text-inverse:     var(--wed-ivory-50);
+  --wed-color-text-link:        var(--wed-tiffany-700);
+  --wed-color-text-link-hover:  var(--wed-tiffany-900);
+
+  --wed-color-border:           var(--wed-neutral-200);
+  --wed-color-border-light:     var(--wed-neutral-100);
+  --wed-color-border-accent:    var(--wed-gold-300);
+  --wed-color-divider:          var(--wed-neutral-200);
+
+  --wed-color-cta-bg:           var(--wed-tiffany-500);
+  --wed-color-cta-bg-hover:     var(--wed-tiffany-700);
+  --wed-color-cta-text:         #FFFFFF;
+  --wed-color-cta-secondary-bg: transparent;
+  --wed-color-cta-secondary-border: var(--wed-tiffany-500);
+
+  /* ========================================
+   * 2. TYPOGRAPHY TOKENS
+   * ======================================== */
+
+  /* --- Font Families --- */
+  --wed-font-heading:    'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --wed-font-body:       'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --wed-font-decorative: 'Great Vibes', 'Brush Script MT', cursive;
+  --wed-font-mono:       'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* --- Font Weights --- */
+  --wed-font-weight-regular:  400;
+  --wed-font-weight-medium:   500;
+  --wed-font-weight-semibold: 600;
+  --wed-font-weight-bold:     700;
+
+  /* --- Font Sizes (Desktop defaults) --- */
+  --wed-font-size-xs:    0.6875rem;  /* 11px — overline */
+  --wed-font-size-sm:    0.75rem;    /* 12px — caption */
+  --wed-font-size-base:  1rem;       /* 16px — body M */
+  --wed-font-size-md:    1.125rem;   /* 18px — body L */
+  --wed-font-size-lg:    1.375rem;   /* 22px — H4 */
+  --wed-font-size-xl:    1.75rem;    /* 28px — H3 */
+  --wed-font-size-2xl:   2.25rem;    /* 36px — H2 */
+  --wed-font-size-3xl:   3rem;       /* 48px — H1 display */
+  --wed-font-size-script-sm: 1.5rem;  /* 24px — decorative */
+  --wed-font-size-script-md: 2.25rem; /* 36px — decorative */
+  --wed-font-size-script-lg: 3.5rem; /* 56px — decorative */
+
+  /* --- Line Heights --- */
+  --wed-line-height-none:   1;
+  --wed-line-height-tight:  1.1;
+  --wed-line-height-snug:   1.25;
+  --wed-line-height-normal: 1.55;
+  --wed-line-height-relaxed: 1.65;
+  --wed-line-height-loose:  1.8;
+
+  /* --- Letter Spacing --- */
+  --wed-letter-spacing-tighter: -0.02em;
+  --wed-letter-spacing-tight:   -0.01em;
+  --wed-letter-spacing-normal:  0;
+  --wed-letter-spacing-wide:    0.02em;
+  --wed-letter-spacing-wider:   0.04em;
+  --wed-letter-spacing-widest:  0.12em;
+
+  /* --- Typographic Styles (composed) --- */
+  /* H1 Display */
+  --wed-heading-display-size:   var(--wed-font-size-3xl);
+  --wed-heading-display-weight: var(--wed-font-weight-semibold);
+  --wed-heading-display-lh:     var(--wed-line-height-tight);
+  --wed-heading-display-ls:     var(--wed-letter-spacing-tighter);
+
+  /* H2 */
+  --wed-heading-h2-size:   var(--wed-font-size-2xl);
+  --wed-heading-h2-weight: var(--wed-font-weight-semibold);
+  --wed-heading-h2-lh:     1.15;
+  --wed-heading-h2-ls:     var(--wed-letter-spacing-tight);
+
+  /* H3 */
+  --wed-heading-h3-size:   var(--wed-font-size-xl);
+  --wed-heading-h3-weight: var(--wed-font-weight-semibold);
+  --wed-heading-h3-lh:     var(--wed-line-height-snug);
+  --wed-heading-h3-ls:     var(--wed-letter-spacing-normal);
+
+  /* H4 */
+  --wed-heading-h4-size:   var(--wed-font-size-lg);
+  --wed-heading-h4-weight: var(--wed-font-weight-medium);
+  --wed-heading-h4-lh:     var(--wed-line-height-snug);
+  --wed-heading-h4-ls:     var(--wed-letter-spacing-normal);
+
+  /* Body L */
+  --wed-body-lg-size:   var(--wed-font-size-md);
+  --wed-body-lg-weight: var(--wed-font-weight-regular);
+  --wed-body-lg-lh:     var(--wed-line-height-relaxed);
+  --wed-body-lg-ls:     var(--wed-letter-spacing-normal);
+
+  /* Body M */
+  --wed-body-size:   var(--wed-font-size-base);
+  --wed-body-weight: var(--wed-font-weight-regular);
+  --wed-body-lh:     var(--wed-line-height-relaxed);
+  --wed-body-ls:     var(--wed-letter-spacing-normal);
+
+  /* Body S */
+  --wed-body-sm-size:   var(--wed-font-size-sm);
+  --wed-body-sm-weight: var(--wed-font-weight-regular);
+  --wed-body-sm-lh:     var(--wed-line-height-normal);
+  --wed-body-sm-ls:     var(--wed-letter-spacing-normal);
+
+  /* Caption */
+  --wed-caption-size:   0.75rem;
+  --wed-caption-weight: var(--wed-font-weight-regular);
+  --wed-caption-lh:     1.4;
+  --wed-caption-ls:     var(--wed-letter-spacing-wide);
+
+  /* Button */
+  --wed-button-size:   0.9375rem;  /* 15px */
+  --wed-button-weight: var(--wed-font-weight-medium);
+  --wed-button-lh:     var(--wed-line-height-none);
+  --wed-button-ls:     var(--wed-letter-spacing-wider);
+
+  /* Overline */
+  --wed-overline-size:   var(--wed-font-size-xs);
+  --wed-overline-weight: var(--wed-font-weight-semibold);
+  --wed-overline-lh:     var(--wed-line-height-none);
+  --wed-overline-ls:     var(--wed-letter-spacing-widest);
+  --wed-overline-transform: uppercase;
+
+  /* ========================================
+   * 3. SPACING TOKENS
+   * ======================================== */
+
+  /* Base: 4px scale */
+  --wed-space-0:    0;
+  --wed-space-px:   1px;
+  --wed-space-1:    0.25rem;   /* 4px */
+  --wed-space-1_5:  0.375rem;  /* 6px */
+  --wed-space-2:    0.5rem;    /* 8px */
+  --wed-space-2_5:  0.625rem;  /* 10px */
+  --wed-space-3:    0.75rem;   /* 12px */
+  --wed-space-3_5:  0.875rem;  /* 14px */
+  --wed-space-4:    1rem;      /* 16px */
+  --wed-space-5:    1.25rem;   /* 20px */
+  --wed-space-6:    1.5rem;    /* 24px */
+  --wed-space-7:    1.75rem;   /* 28px */
+  --wed-space-8:    2rem;      /* 32px */
+  --wed-space-9:    2.25rem;   /* 36px */
+  --wed-space-10:   2.5rem;    /* 40px */
+  --wed-space-11:   2.75rem;   /* 44px */
+  --wed-space-12:   3rem;      /* 48px */
+  --wed-space-14:   3.5rem;    /* 56px */
+  --wed-space-16:   4rem;      /* 64px */
+  --wed-space-20:   5rem;      /* 80px */
+  --wed-space-24:   6rem;      /* 96px */
+  --wed-space-28:   7rem;      /* 112px */
+  --wed-space-32:   8rem;      /* 128px */
+
+  /* --- Semantic Spacing Aliases --- */
+  --wed-gap-xs:    var(--wed-space-1);   /* 4px — chip gap */
+  --wed-gap-sm:    var(--wed-space-2);   /* 8px — icon+text */
+  --wed-gap-md:    var(--wed-space-4);   /* 16px — grid gap */
+  --wed-gap-lg:    var(--wed-space-6);   /* 24px — component gap */
+  --wed-gap-xl:    var(--wed-space-10);  /* 40px — section gap */
+
+  --wed-padding-card:    var(--wed-space-4);
+  --wed-padding-section-sm: var(--wed-space-8);  /* mobile */
+  --wed-padding-section-lg: var(--wed-space-12); /* desktop */
+
+  /* --- Content Widths --- */
+  --wed-max-width:        960px;
+  --wed-max-width-narrow: 720px;
+  --wed-max-width-wide:   1200px;
+  --wed-max-width-full:   100%;
+
+  /* --- Container Padding (responsive) --- */
+  --wed-container-padding-sm: var(--wed-space-4);  /* 16px — 320px */
+  --wed-container-padding-md: var(--wed-space-5);  /* 20px — 480px */
+  --wed-container-padding-lg: var(--wed-space-8);  /* 32px — 768px */
+  --wed-container-padding-xl: var(--wed-space-10); /* 40px — 1024px */
+
+  /* ========================================
+   * 4. SHADOW TOKENS
+   * ======================================== */
+
+  /* --- Elevation Shadows (warm tint) --- */
+  --wed-shadow-xs:  0 1px 2px rgba(26, 24, 22, 0.04);
+  --wed-shadow-sm:  0 1px 3px rgba(26, 24, 22, 0.06), 0 1px 2px rgba(26, 24, 22, 0.04);
+  --wed-shadow-md:  0 4px 12px rgba(26, 24, 22, 0.08), 0 2px 4px rgba(26, 24, 22, 0.04);
+  --wed-shadow-lg:  0 12px 36px rgba(26, 24, 22, 0.12), 0 4px 12px rgba(26, 24, 22, 0.06);
+  --wed-shadow-xl:  0 20px 48px rgba(26, 24, 22, 0.16), 0 8px 16px rgba(26, 24, 22, 0.08);
+
+  /* --- Colored Shadows --- */
+  --wed-shadow-tiffany: 0 4px 16px rgba(126, 205, 192, 0.3);
+  --wed-shadow-tiffany-lg: 0 8px 24px rgba(126, 205, 192, 0.35);
+  --wed-shadow-gold:    0 2px 8px rgba(201, 169, 110, 0.25);
+  --wed-shadow-gold-lg: 0 4px 16px rgba(201, 169, 110, 0.3);
+
+  /* --- Special Shadows --- */
+  --wed-shadow-inner:   inset 0 2px 4px rgba(26, 24, 22, 0.06);
+  --wed-shadow-inner-lg: inset 0 4px 8px rgba(26, 24, 22, 0.08);
+  --wed-shadow-none:    0 0 #0000;
+
+  /* --- Focus Ring --- */
+  --wed-focus-ring:      0 0 0 3px rgba(126, 205, 192, 0.4);
+  --wed-focus-ring-gold: 0 0 0 3px rgba(201, 169, 110, 0.4);
+
+  /* ========================================
+   * 5. BORDER RADIUS TOKENS
+   * ======================================== */
+
+  --wed-radius-none: 0;
+  --wed-radius-sm:   4px;
+  --wed-radius-md:   8px;
+  --wed-radius-lg:   12px;
+  --wed-radius-xl:   16px;
+  --wed-radius-2xl:  24px;
+  --wed-radius-3xl:  32px;
+  --wed-radius-full: 9999px;
+
+  /* Semantic aliases */
+  --wed-radius-badge:  var(--wed-radius-sm);
+  --wed-radius-button: var(--wed-radius-md);
+  --wed-radius-card:   var(--wed-radius-lg);
+  --wed-radius-modal:  var(--wed-radius-xl);
+
+  /* ========================================
+   * 6. BORDER / STROKE TOKENS
+   * ======================================== */
+
+  --wed-border-width-thin:  1px;
+  --wed-border-width-base:  1.5px;
+  --wed-border-width-thick: 2px;
+
+  --wed-border-default: var(--wed-border-width-thin) solid var(--wed-color-border);
+  --wed-border-light:   var(--wed-border-width-thin) solid var(--wed-color-border-light);
+  --wed-border-accent:  var(--wed-border-width-base) solid var(--wed-color-border-accent);
+  --wed-border-primary: var(--wed-border-width-thick) solid var(--wed-color-primary);
+
+  /* ========================================
+   * 7. TRANSITION TOKENS
+   * ======================================== */
+
+  /* --- Durations --- */
+  --wed-duration-instant: 50ms;
+  --wed-duration-fast:    150ms;
+  --wed-duration-base:    250ms;
+  --wed-duration-slow:    400ms;
+  --wed-duration-slower:  600ms;
+
+  /* --- Easing Functions --- */
+  --wed-ease-linear:    linear;
+  --wed-ease-in:        cubic-bezier(0.4, 0, 1, 1);
+  --wed-ease-out:       cubic-bezier(0, 0, 0.2, 1);
+  --wed-ease-in-out:    cubic-bezier(0.4, 0, 0.2, 1);
+  --wed-ease-spring:    cubic-bezier(0.34, 1.56, 0.64, 1);
+  --wed-ease-bounce:    cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* --- Composed Transitions --- */
+  --wed-transition-color:    color var(--wed-duration-fast) var(--wed-ease-out),
+                             background-color var(--wed-duration-fast) var(--wed-ease-out),
+                             border-color var(--wed-duration-fast) var(--wed-ease-out);
+
+  --wed-transition-transform: transform var(--wed-duration-base) var(--wed-ease-out);
+
+  --wed-transition-shadow:   box-shadow var(--wed-duration-base) var(--wed-ease-out);
+
+  --wed-transition-opacity:  opacity var(--wed-duration-fast) var(--wed-ease-out);
+
+  --wed-transition-all:      all var(--wed-duration-base) var(--wed-ease-out);
+
+  --wed-transition-spring:   transform var(--wed-duration-slow) var(--wed-ease-spring);
+
+  --wed-transition-card:     transform var(--wed-duration-base) var(--wed-ease-out),
+                             box-shadow var(--wed-duration-base) var(--wed-ease-out);
+
+  --wed-transition-modal:    opacity var(--wed-duration-slow) var(--wed-ease-in-out),
+                             transform var(--wed-duration-slow) var(--wed-ease-in-out);
+
+  /* ========================================
+   * 8. Z-INDEX TOKENS
+   * ======================================== */
+
+  --wed-z-base:         0;
+  --wed-z-below:       -1;
+  --wed-z-above:        1;
+  --wed-z-dropdown:     100;
+  --wed-z-sticky:       200;
+  --wed-z-fixed:        300;
+  --wed-z-overlay:      400;
+  --wed-z-modal:        500;
+  --wed-z-popover:      600;
+  --wed-z-tooltip:      700;
+  --wed-z-toast:        800;
+  --wed-z-skip-link:    900;
+
+  /* ========================================
+   * 9. BREAKPOINT TOKENS (for reference)
+   * ======================================== */
+
+  /* Use in media queries, not as CSS custom properties in queries */
+  /* --wed-bp-sm: 320px  — mobile baseline */
+  /* --wed-bp-md: 480px  — large phone */
+  /* --wed-bp-lg: 768px  — tablet */
+  /* --wed-bp-xl: 1024px — desktop */
+
+  /* ========================================
+   * 10. LAYOUT TOKENS
+   * ======================================== */
+
+  /* --- Grid --- */
+  --wed-grid-columns:    12;
+  --wed-grid-gap:        var(--wed-space-4);
+  --wed-grid-gap-lg:     var(--wed-space-6);
+
+  /* --- Card Dimensions --- */
+  --wed-card-aspect:     3 / 4;
+  --wed-card-min-width:  260px;
+  --wed-card-max-width:  320px;
+  --wed-card-image-height: 240px;
+
+  /* ========================================
+   * 11. OPACITY TOKENS
+   * ======================================== */
+
+  --wed-opacity-0:    0;
+  --wed-opacity-10:   0.1;
+  --wed-opacity-20:   0.2;
+  --wed-opacity-30:   0.3;
+  --wed-opacity-40:   0.4;
+  --wed-opacity-50:   0.5;
+  --wed-opacity-60:   0.6;
+  --wed-opacity-70:   0.7;
+  --wed-opacity-80:   0.8;
+  --wed-opacity-90:   0.9;
+  --wed-opacity-100:  1;
+
+  /* --- Overlay opacities --- */
+  --wed-overlay-light:  rgba(26, 24, 22, 0.3);
+  --wed-overlay-medium: rgba(26, 24, 22, 0.5);
+  --wed-overlay-dark:   rgba(26, 24, 22, 0.7);
+  --wed-overlay-tiffany: rgba(126, 205, 192, 0.15);
+
+  /* ========================================
+   * 12. PRICE TOKENS
+   * ======================================== */
+
+  /* Tier prices for display reference */
+  --wed-price-basic:   '2 000 ₽';
+  --wed-price-standard: '3 200 ₽';
+  --wed-price-premium:  '4 000 ₽';
+
+  /* Price styling */
+  --wed-price-size:      var(--wed-font-size-md);
+  --wed-price-weight:    var(--wed-font-weight-medium);
+  --wed-price-color:     var(--wed-tiffany-700);
+  --wed-price-old-color: var(--wed-neutral-400);
+  --wed-price-old-decoration: line-through;
+}
+
+/* ========================================
+ * RESPONSIVE: Fluid Typography
+ * ======================================== */
+
+/* Mobile-first: base = 320px, scale up */
+@media (min-width: 480px) {
+  :root {
+    --wed-heading-display-size: 2.25rem;  /* 36px */
+    --wed-heading-h2-size:      1.75rem;  /* 28px */
+    --wed-heading-h3-size:      1.5rem;   /* 24px */
+    --wed-font-size-base:       1rem;     /* 16px */
+    --wed-font-size-script-lg:  2.5rem;   /* 40px */
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --wed-heading-display-size: 2.625rem; /* 42px */
+    --wed-heading-h2-size:      2rem;     /* 32px */
+    --wed-heading-h3-size:      1.625rem; /* 26px */
+    --wed-font-size-script-lg:  3rem;     /* 48px */
+    --wed-container-padding:    var(--wed-container-padding-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --wed-heading-display-size: 3rem;     /* 48px */
+    --wed-heading-h2-size:      2.25rem;  /* 36px */
+    --wed-heading-h3-size:      1.75rem;  /* 28px */
+    --wed-font-size-script-lg:  3.5rem;   /* 56px */
+    --wed-container-padding:    var(--wed-container-padding-xl);
+  }
+}
+
+/* ========================================
+ * UTILITY: Reduced Motion
+ * ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --wed-duration-fast:   0ms;
+    --wed-duration-base:   0ms;
+    --wed-duration-slow:   0ms;
+    --wed-duration-slower: 0ms;
+  }
+}
+
+/* ========================================
+ * UTILITY: Dark Mode (future)
+ * ======================================== */
+
+/* Reserved for dark mode implementation */
+/* @media (prefers-color-scheme: dark) { ... } */
