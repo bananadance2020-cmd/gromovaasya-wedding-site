@@ -6,7 +6,7 @@ const CATALOG_TEMPLATES = [
     style: 'classic',
     price: 'от 2 000 ₽',
     description: 'Изысканный классический стиль с золотыми акцентами и каллиграфией',
-    image: 'assets/images/catalog/classic-elegance.webp'
+    image: 'assets/images/catalog/classic-elegance.svg'
   },
   {
     id: 'minimal-white',
@@ -14,7 +14,7 @@ const CATALOG_TEMPLATES = [
     style: 'minimal',
     price: 'от 2 000 ₽',
     description: 'Чистые линии, много воздуха, современная типографика',
-    image: 'assets/images/catalog/minimal-white.webp'
+    image: 'assets/images/catalog/minimal-white.svg'
   },
   {
     id: 'boho-garden',
@@ -22,7 +22,7 @@ const CATALOG_TEMPLATES = [
     style: 'boho',
     price: 'от 2 000 ₽',
     description: 'Ботанические иллюстрации, тёплые тона, природная эстетика',
-    image: 'assets/images/catalog/boho-garden.webp'
+    image: 'assets/images/catalog/boho-garden.svg'
   },
   {
     id: 'modern-geometry',
@@ -30,7 +30,7 @@ const CATALOG_TEMPLATES = [
     style: 'modern',
     price: 'от 2 000 ₽',
     description: 'Смелые формы, контрастные цвета, современный дизайн',
-    image: 'assets/images/catalog/modern-geometry.webp'
+    image: 'assets/images/catalog/modern-geometry.svg'
   },
   {
     id: 'vintage-romance',
@@ -38,7 +38,7 @@ const CATALOG_TEMPLATES = [
     style: 'classic',
     price: 'от 2 000 ₽',
     description: 'Ретро-эстетика, состаренные текстуры, ностальгический шарм',
-    image: 'assets/images/catalog/vintage-romance.webp'
+    image: 'assets/images/catalog/vintage-romance.svg'
   },
   {
     id: 'minimal-line',
@@ -46,7 +46,7 @@ const CATALOG_TEMPLATES = [
     style: 'minimal',
     price: 'от 2 000 ₽',
     description: 'Лаконичный дизайн с акцентом на типографику',
-    image: 'assets/images/catalog/minimal-line.webp'
+    image: 'assets/images/catalog/minimal-line.svg'
   },
   {
     id: 'boho-dream',
@@ -54,7 +54,7 @@ const CATALOG_TEMPLATES = [
     style: 'boho',
     price: 'от 2 000 ₽',
     description: 'Макраме, перья, ловцы снов — для свободных душой',
-    image: 'assets/images/catalog/boho-dream.webp'
+    image: 'assets/images/catalog/boho-dream.svg'
   },
   {
     id: 'modern-art',
@@ -62,7 +62,7 @@ const CATALOG_TEMPLATES = [
     style: 'modern',
     price: 'от 2 000 ₽',
     description: 'Абстрактные формы, живописные текстуры, галерейный стиль',
-    image: 'assets/images/catalog/modern-art.webp'
+    image: 'assets/images/catalog/modern-art.svg'
   },
   {
     id: 'royal-gold',
@@ -70,7 +70,7 @@ const CATALOG_TEMPLATES = [
     style: 'classic',
     price: 'от 2 000 ₽',
     description: 'Роскошный стиль с тиснением и золотой фольгой',
-    image: 'assets/images/catalog/royal-gold.webp'
+    image: 'assets/images/catalog/royal-gold.svg'
   },
   {
     id: 'minimal-scandi',
@@ -78,7 +78,7 @@ const CATALOG_TEMPLATES = [
     style: 'minimal',
     price: 'от 2 000 ₽',
     description: 'Свет, дерево, натуральные оттенки — хюгге для свадьбы',
-    image: 'assets/images/catalog/minimal-scandi.webp'
+    image: 'assets/images/catalog/minimal-scandi.svg'
   },
   {
     id: 'boho-rustic',
@@ -86,7 +86,7 @@ const CATALOG_TEMPLATES = [
     style: 'boho',
     price: 'от 2 000 ₽',
     description: 'Крафт-бумага, полевые цветы, деревенский уют',
-    image: 'assets/images/catalog/boho-rustic.webp'
+    image: 'assets/images/catalog/boho-rustic.svg'
   },
   {
     id: 'modern-luxury',
@@ -94,6 +94,6 @@ const CATALOG_TEMPLATES = [
     style: 'modern',
     price: 'от 2 000 ₽',
     description: 'Мрамор, металл, геометрия — для стильных пар',
-    image: 'assets/images/catalog/modern-luxury.webp'
+    image: 'assets/images/catalog/modern-luxury.svg'
   }
 ];
