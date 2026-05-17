@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Свадебные приглашения от Анастасии Громовой — @gromovaasya</title>
+  <meta name="description" content="Дизайнерские электронные свадебные приглашения. 12 стилей, от 2000₽. Индивидуальный подход, быстрая доставка, 200+ счастливых пар.">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Свадебные приглашения — Анастасия Громова">
+  <meta property="og:description" content="Уникальные электронные приглашения для вашей свадьбы. 12 дизайнерских стилей, персонализация, от 2000₽.">
+  <meta property="og:image" content="assets/images/og-image-1200x630.png">
+  <meta property="og:url" content="https://gromovaasya.ru">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ============================================
+       STICKY HEADER
+       ============================================ -->
+  <header id="header" class="header" role="banner">
+    <div class="container">
+      <a href="#hero" class="header__logo" aria-label="На главную">
+        Анастасия Громова
+      </a>
+      
+      <button class="header__burger" aria-label="Меню" aria-expanded="false" aria-controls="header-nav">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+      
+      <nav id="header-nav" class="header__nav" role="navigation" aria-label="Основная навигация">
+        <ul class="header__menu">
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#how-it-works">Как работает</a></li>
+          <li><a href="#pricing">Цены</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a href="#cta-footer" class="btn btn--primary header__cta">Заказать</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================
+         SECTION 1: HERO
+         ============================================ -->
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__subtitle">Дизайнерские электронные приглашения</p>
+        <h1 id="hero-heading" class="hero__title">
+          Свадебные приглашения,<br>
+          <em>от которых замирает сердце</em>
+        </h1>
+        <p class="hero__description">
+          12 уникальных стилей · Персонализация · Готово за 1–3 дня
+        </p>
+        <div class="hero__actions">
+          <a href="#catalog" class="btn btn--primary btn--lg">Смотреть каталог</a>
+          <a href="#pricing" class="btn btn--ghost btn--lg">Узнать цены</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 2: TRUST BAR
+         ============================================ -->
+    <section id="trust" class="trust-bar" aria-label="Социальное доказательство">
+      <div class="container">
+        <div class="trust-bar__grid">
+          <div class="trust-item">
+            <span class="trust-item__number">200+</span>
+            <span class="trust-item__label">Счастливых пар</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-item__number">1–3</span>
+            <span class="trust-item__label">Дня на выполнение</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-item__number">12</span>
+            <span class="trust-item__label">Уникальных стилей</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-item__number">⭐ 4.9</span>
+            <span class="trust-item__label">Средняя оценка</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3: CATALOG
+         ============================================ -->
+    <section id="catalog" class="catalog" aria-labelledby="catalog-heading">
+      <div class="container">
+        <h2 id="catalog-heading" class="section-title">Каталог приглашений</h2>
+        <p class="section-subtitle">Выберите стиль, который отражает вашу историю любви</p>
+        
+        <!-- Filters -->
+        <div class="catalog__filters" role="group" aria-label="Фильтры по стилю">
+          <button class="filter-btn filter-btn--active" data-filter="all">Все стили</button>
+          <button class="filter-btn" data-filter="classic">Классика</button>
+          <button class="filter-btn" data-filter="minimal">Минимализм</button>
+          <button class="filter-btn" data-filter="boho">Бохо</button>
+          <button class="filter-btn" data-filter="modern">Модерн</button>
+        </div>
+        
+        <!-- Cards Grid -->
+        <div class="catalog__grid" id="catalog-grid">
+          <!-- 12 cards will be rendered here by JS -->
+          <!-- Template: assets/images/catalog/{id}.webp -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: HOW IT WORKS
+         ============================================ -->
+    <section id="how-it-works" class="how-it-works" aria-labelledby="hiw-heading">
+      <div class="container">
+        <h2 id="hiw-heading" class="section-title">Как это работает</h2>
+        <p class="section-subtitle">4 простых шага до идеальных приглашений</p>
+        
+        <div class="steps">
+          <div class="step">
+            <span class="step__number">1</span>
+            <h3 class="step__title">Выберите стиль</h3>
+            <p class="step__desc">Просмотрите каталог и выберите дизайн, который вам по душе</p>
+          </div>
+          <div class="step">
+            <span class="step__number">2</span>
+            <h3 class="step__title">Расскажите о себе</h3>
+            <p class="step__desc">Заполните форму: имена, дата, детали вашей истории</p>
+          </div>
+          <div class="step">
+            <span class="step__number">3</span>
+            <h3 class="step__title">Утвердите макет</h3>
+            <p class="step__desc">Получите превью и внесите бесплатные правки</p>
+          </div>
+          <div class="step">
+            <span class="step__number">4</span>
+            <h3 class="step__title">Получите приглашения</h3>
+            <p class="step__desc">Готовые файлы для печати или отправки гостям</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 5: PRICING
+         ============================================ -->
+    <section id="pricing" class="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <h2 id="pricing-heading" class="section-title">Цены и услуги</h2>
+        <p class="section-subtitle">Прозрачная стоимость без скрытых доплат</p>
+        
+        <div class="pricing__grid">
+          <!-- Базовый -->
+          <div class="price-card">
+            <h3 class="price-card__title">Базовый</h3>
+            <span class="price-card__price">2 000 ₽</span>
+            <ul class="price-card__features">
+              <li>Выбор из каталога</li>
+              <li>Персонализация: имена, дата</li>
+              <li>1 бесплатная правка</li>
+              <li>Готовый файл для печати</li>
+              <li>Срок: 2–3 дня</li>
+            </ul>
+            <a href="#cta-footer" class="btn btn--outline btn--block">Выбрать</a>
+          </div>
+          
+          <!-- Полный -->
+          <div class="price-card price-card--popular">
+            <span class="price-card__badge">Популярный</span>
+            <h3 class="price-card__title">Полный</h3>
+            <span class="price-card__price">3 200 ₽</span>
+            <ul class="price-card__features">
+              <li>Всё из «Базового»</li>
+              <li>Анимированная версия</li>
+              <li>Карта проезда</li>
+              <li>3 бесплатные правки</li>
+              <li>Приоритетная поддержка</li>
+            </ul>
+            <a href="#cta-footer" class="btn btn--primary btn--block">Выбрать</a>
+          </div>
+          
+          <!-- Премиум -->
+          <div class="price-card">
+            <h3 class="price-card__title">Премиум</h3>
+            <span class="price-card__price">4 000 ₽</span>
+            <ul class="price-card__features">
+              <li>Всё из «Полного»</li>
+              <li>Индивидуальный дизайн</li>
+              <li>Печатная версия</li>
+              <li>Безлимитные правки</li>
+              <li>VIP-поддержка</li>
+            </ul>
+            <a href="#cta-footer" class="btn btn--outline btn--block">Выбрать</a>
+          </div>
+        </div>
+        
+        <!-- Addons -->
+        <details class="pricing__addons">
+          <summary class="pricing__addons-summary">Дополнительные услуги (+150 ₽/шт)</summary>
+          <div class="pricing__addons-list">
+            <div class="addon">Обратный отсчёт до свадьбы</div>
+            <div class="addon">Музыкальный фон</div>
+            <div class="addon">Название свадьбы</div>
+            <div class="addon">Доп. информационный блок</div>
+            <div class="addon">Доп. фото</div>
+            <div class="addon">Анимация элементов</div>
+            <div class="addon">QR-код для гостей</div>
+            <div class="addon">Печатная версия (PDF)</div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 6: REVIEWS
+         ============================================ -->
+    <section id="reviews" class="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        <h2 id="reviews-heading" class="section-title">Отзывы наших пар</h2>
+        <p class="section-subtitle">Более 200 счастливых историй</p>
+        
+        <div class="reviews__carousel" role="region" aria-label="Карусель отзывов" aria-roledescription="carousel">
+          <div class="reviews__track" id="reviews-track">
+            <!-- 4 review cards -->
+            <div class="review-card" role="group" aria-roledescription="slide" aria-label="Отзыв 1 из 4">
+              <div class="review-card__header">
+                <img src="assets/images/testimonials/review-1.webp" alt="Отзыв от Мария и Алексей" class="review-card__avatar" loading="lazy">
+                <div>
+                  <strong>Мария и Алексей</strong>
+                  <span class="review-card__stars">⭐⭐⭐⭐⭐</span>
+                </div>
+              </div>
+              <blockquote class="review-card__text">
+                «Приглашения получились волшебными! Все гости спрашивали, где мы их заказывали. Спасибо за такую красоту!»
+              </blockquote>
+            </div>
+            <!-- Reviews 2-4 will be added in Phase 2 -->
+          </div>
+          
+          <div class="reviews__controls">
+            <button class="reviews__btn reviews__btn--prev" aria-label="Предыдущий отзыв">←</button>
+            <button class="reviews__btn reviews__btn--next" aria-label="Следующий отзыв">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 7: WHY US
+         ============================================ -->
+    <section id="why-us" class="why-us" aria-labelledby="why-heading">
+      <div class="container">
+        <h2 id="why-heading" class="section-title">Почему выбирают нас</h2>
+        
+        <div class="benefits">
+          <div class="benefit">
+            <img src="assets/icons/icon-unique.svg" alt="" class="benefit__icon" loading="lazy">
+            <h3 class="benefit__title">Уникальный дизайн</h3>
+            <p class="benefit__desc">Каждый шаблон — авторская работа, а не масс-маркет</p>
+          </div>
+          <div class="benefit">
+            <img src="assets/icons/icon-speed.svg" alt="" class="benefit__icon" loading="lazy">
+            <h3 class="benefit__title">Быстро</h3>
+            <p class="benefit__desc">Готовые приглашения за 1–3 дня, без задержек</p>
+          </div>
+          <div class="benefit">
+            <img src="assets/icons/icon-price.svg" alt="" class="benefit__icon" loading="lazy">
+            <h3 class="benefit__title">Честная цена</h3>
+            <p class="benefit__desc">Прозрачная стоимость без скрытых доплат и сюрпризов</p>
+          </div>
+          <div class="benefit">
+            <img src="assets/icons/icon-support.svg" alt="" class="benefit__icon" loading="lazy">
+            <h3 class="benefit__title">Поддержка</h3>
+            <p class="benefit__desc">На связи в Telegram, отвечаем за 30 минут</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 8: FAQ
+         ============================================ -->
+    <section id="faq" class="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <h2 id="faq-heading" class="section-title">Частые вопросы</h2>
+        
+        <div class="faq__list" role="list">
+          <details class="faq__item">
+            <summary class="faq__question" role="button" aria-expanded="false">
+              Какие форматы приглашений вы делает?
+            </summary>
+            <div class="faq__answer">
+              <p>Электронные (JPEG, PDF) для отправки в мессенджерах и email, анимированные (GIF, видео) для Instagram, а также печатные версии в формате PDF для типографии.</p>
+            </div>
+          </details>
+          
+          <details class="faq__item">
+            <summary class="faq__question" role="button" aria-expanded="false">
+              Сколько правок входит в стоимость?
+            </summary>
+            <div class="faq__answer">
+              <p>В базовый пакет — 1 бесплатная правка, в полный — 3, в премиум — безлимитные правки. Дополнительные правки — 150₽ за штуку.</p>
+            </div>
+          </details>
+          
+          <details class="faq__item">
+            <summary class="faq__question" role="button" aria-expanded="false">
+              Можно ли изменить цвета в шаблоне?
+            </summary>
+            <div class="faq__answer">
+              <p>Да! Адаптация цветов шаблона под вашу свадебную палитру — одна из самых популярных услуг. Это входит в пакеты «Полный» и «Премиум».</p>
+            </div>
+          </details>
+          
+          <details class="faq__item">
+            <summary class="faq__question" role="button" aria-expanded="false">
+              Как быстро вы сделаете приглашения?
+            </summary>
+            <div class="faq__answer">
+              <p>Стандартный срок — 1–3 рабочих дня. Приоритетная обработка (в тот же день) — доступна в пакете «Премиум» или как доп. услуга.</p>
+            </div>
+          </details>
+          
+          <details class="faq__item">
+            <summary class="faq__question" role="button" aria-expanded="false">
+              Как происходит оплата?
+            </summary>
+            <div class="faq__answer">
+              <p>Оплата через перевод на карту или СБП. Предоплата 50% перед началом работы, остаток — после утверждения макета. Для пакета «Премиум» — оплата после получения.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 9: CTA FOOTER
+         ============================================ -->
+    <section id="cta-footer" class="cta-footer" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading" class="section-title section-title--light">Готовы начать?</h2>
+        <p class="section-subtitle section-subtitle--light">
+          Оставьте заявку, и мы свяжемся с вами в Telegram в течение 30 минут
+        </p>
+        
+        <form class="order-form" id="order-form" action="https://formspree.io/f/[FORMSPREE_ID]" method="POST">
+          <div class="form__row">
+            <div class="form__group">
+              <label for="form-name" class="form__label">Ваше имя</label>
+              <input type="text" id="form-name" name="name" class="form__input" placeholder="Как к вам обращаться?" required>
+            </div>
+            <div class="form__group">
+              <label for="form-contact" class="form__label">Telegram / Телефон</label>
+              <input type="text" id="form-contact" name="contact" class="form__input" placeholder="@username или +7..." required>
+            </div>
+          </div>
+          
+          <div class="form__group">
+            <label for="form-template" class="form__label">Выбранный шаблон или пакет</label>
+            <select id="form-template" name="template" class="form__select">
+              <option value="">Ещё не выбрали — нужна помощь</option>
+              <option value="basic">Базовый — 2 000 ₽</option>
+              <option value="full">Полный — 3 200 ₽</option>
+              <option value="premium">Премиум — 4 000 ₽</option>
+            </select>
+          </div>
+          
+          <div class="form__group">
+            <label for="form-message" class="form__label">Расскажите о вашей свадьбе</label>
+            <textarea id="form-message" name="message" class="form__textarea" rows="3" placeholder="Дата, количество гостей, пожелания по стилю..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn--primary btn--lg btn--block form__submit">
+            Отправить заявку
+          </button>
+          
+          <p class="form__note">
+            Нажимая кнопку, вы соглашаетесь на обработку персональных данных
+          </p>
+        </form>
+        
+        <div class="cta-footer__success" id="form-success" style="display: none;">
+          <p>✅ Заявка отправлена! Мы напишем вам в Telegram в течение 30 минут.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FLOATING TELEGRAM FAB
+       ============================================ -->
+  <a href="https://t.me/gromovaasya" target="_blank" rel="noopener noreferrer" class="fab fab--telegram" aria-label="Написать в Telegram">
+    <img src="assets/icons/icon-telegram.svg" alt="" width="24" height="24" loading="lazy">
+  </a>
+
+  <!-- ============================================
+       MODAL: Template Details
+       ============================================ -->
+  <div class="modal" id="template-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" style="display: none;">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" aria-label="Закрыть">&times;</button>
+      <h3 id="modal-title" class="modal__title"></h3>
+      <img id="modal-image" class="modal__image" src="" alt="">
+      <p id="modal-description" class="modal__description"></p>
+      <a href="#cta-footer" class="btn btn--primary btn--block modal__cta">Заказать этот шаблон</a>
+    </div>
+  </div>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer__copyright">
+        © 2026 Анастасия Громова · Свадебные приглашения
+      </p>
+      <div class="footer__links">
+        <a href="https://t.me/gromovaasya" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://instagram.com/gromovaasya" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/catalog-data.js" defer></script>
+  <script src="js/catalog-filter.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/accordion.js" defer></script>
+  <script src="js/form-validation.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
